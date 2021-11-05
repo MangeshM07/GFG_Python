@@ -39,3 +39,16 @@ print(l)
 del l[0:2]
 print(l)
 
+# More general purpose functions
+lst = [10,20,30,40,50]
+
+print(max(lst))
+print(min(lst))
+print(sum(lst))
+lst.reverse()
+print(lst)
+
+lst.sort()
+print(lst)
+
+

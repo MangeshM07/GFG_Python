@@ -29,3 +29,35 @@ print(l7)
 l8 = [x*2 for x in range(6)]
 print(l8)
 
+l9 = ["geeks", "for", "geeks", "gfg", "ide"]
+l10 = [x.upper() for x in l9 if x.startswith("g")]
+print(l10)
+
+# Set Comprehensions
+l11 = [10,20,3,4,10,20,7,3]
+s1 = {x for x in l11 if x%2==0}
+s2 = {x for x in l11 if x%2!=0}
+print(s1)
+print(s2)
+
+# Dictionary comprehension
+l12 = [1,3,4,2,5]
+d1 = {x:x**3 for x in l12}
+print(d1)
+
+d2 = {x:f"ID{x}" for x in range(5)}
+print(d2)
+
+l13 = [101,102,103]
+l14 = ["gfg", "ide", "courses"]
+d3 = {l13[i]:l14[i] for i in range(len(l13))}
+print(d3)
+
+# Better way to create dictionary from 2 lists
+d4 = dict(zip(l13, l14))
+print(d4)
+
+# Inverting a dictionary (Key becomes value and value becomes key)
+d5 = {101: 'gfg', 102: 'ide', 103: 'courses'}
+d6 = {v:k for (k,v) in d5.items()}
+print(d6)

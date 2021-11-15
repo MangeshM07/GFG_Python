@@ -2,6 +2,7 @@ class MyHash:
     def __init__(self, b):
         self.bucket = b
         self.table = [[] for x in range(b)]
+        print(self.table)
 
     def insert(self, x):
         i = x % self.bucket

@@ -111,3 +111,18 @@ Self Balancing BST (AVL Tree, redBlack Tree) - Search/Insert/Delete O(log l). No
 
 
 """
+
+"""
+                            Chaining vs Open Addressing
+                            ==========================
+                            
+1. Hash table never fills                   Table may become full and resizing becomes mandatory
+2. Less sensitive to hash functions         Extra care required for clustering
+3. Poor cache performance                   Cache friendly                         
+4. Extra space for links                    Extra space might be needed to achieve same performance as chaining
+5. Can be used for unknown no. of keys      Can be used when you know number of keys in advance
+6. Better version of collision handling
+7. Better performance
+
+
+"""

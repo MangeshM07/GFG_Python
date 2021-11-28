@@ -9,7 +9,7 @@ for un-sorted array, delete and insert becomes O(1) and search becomes O(n).
 For Binary search trees specially AVL tree and Red-Black Tree,
     O(log n) - search, insert and delete
 
-Hasing is good for exact search .It is not suitable for comparison operations. BST is best in such cases.
+Hashing is good for exact search .It is not suitable for comparison operations. BST is best in such cases.
 Also not suitable for printing sorted order .
 
 Not useful for : --> Finding closest value, -- Best AVL or RedBlack tree
@@ -51,7 +51,7 @@ Example hash functions:
 """
 Collision handling
 =================
-when you universe is big, hash table is small. 
+when your universe is big, hash table is small. 
 So its likely that two keys from your big universe may map to same key in the hash table which results in collision.
 Collision is bound to happen if you do not know keys in advance.
 
@@ -72,7 +72,7 @@ hash(key) = key%7
 keys = [50, 21, 58, 17, 15, 49, 56, 22, 23, 25]
 
 Hash Table(Array of Linked List headers)
-Linked List is used as whenever any collision happens , we enter the an item at the ned of the LL.
+Linked List is used as whenever any collision happens , we enter an item at the end of the LL.
 To choose a key, we pick up a value greater than n and closest to n.
 
  |----------|	

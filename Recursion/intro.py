@@ -83,6 +83,13 @@ def fun5(n):
 
 # fun5(15)
 
+# sum of natural numbers using recursion
+def sumOfNaturalNumbers(n):
+    if n == 0:
+        return 0
+    result = result + sumOfNaturalNumbers(n-1)
+    return result
+
 # Sum of digits using recursion
 
 def sumOfDigits(n):

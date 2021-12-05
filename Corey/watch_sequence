@@ -4,3 +4,7 @@ threading-demo2
 threading-sync
 threading-async
 multi-processing1
+multi-processing2
+multi-processing3
+multi-processing4
+process-images.py

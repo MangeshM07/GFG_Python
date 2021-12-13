@@ -23,6 +23,7 @@ class Employee:
     def set_raise_amt(cls, amount):
         cls.raise_amount = amount
 
+# class methods are also called as alternative constructors
     @classmethod
     def from_string(cls, emp_str):
         first, last, pay = emp_str.split('-')

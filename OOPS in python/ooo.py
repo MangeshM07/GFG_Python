@@ -22,6 +22,11 @@ class Employee:
     def set_raise_amt(cls, amount):
         cls.raise_amount = amount
 
+    @classmethod
+    def from_string(cls, emp_str):
+        first, last, pay = emp_str.split('-')
+        return cls(first, last, pay)
+
 emp_1 = Employee("Tom", "Cruise", 80000)
 emp_2 = Employee("Will", "Smith", 76000)
 
@@ -48,3 +53,12 @@ print(Employee.raise_amount)
 # print(Employee.__dict__)
 
 print(Employee.num_of_emps)
+
+emp_str_1 = "John-Doe-70000"
+emp_str_2 = "Steve-smith-40000"
+emp_str_3 = "Glenn-Maxwell-60000"
+
+new_emp_1 = Employee.from_string(emp_str_1)
+print(new_emp_1.fullname())
+print(new_emp_1.email)
+

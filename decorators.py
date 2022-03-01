@@ -1,3 +1,10 @@
+"""
+A decorator is a function that takes another function as an argument , adds some kind of functionality and
+then returns another function. All of these without altering the source code of the original function that you passsed in
+
+"""
+
+
 def decor1(func):
     def inner():
         x = func()

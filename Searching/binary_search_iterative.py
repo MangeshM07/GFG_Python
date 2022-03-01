@@ -19,7 +19,6 @@ def bSearch(l, x):
             return mid
         elif l[mid] < x:
             low = mid + 1
-
         else:
             high = mid - 1
 

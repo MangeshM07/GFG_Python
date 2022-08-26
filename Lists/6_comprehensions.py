@@ -61,3 +61,11 @@ print(d4)
 d5 = {101: 'gfg', 102: 'ide', 103: 'courses'}
 d6 = {v:k for (k,v) in d5.items()}
 print(d6)
+
+
+# given a list , find list of odd and even elements
+lst = [1,3,6,2,8,43,63,76,91]
+even_list = [ item for item in lst if item%2==0 ]
+odd_list = [ item for item in lst if item%2!=0 ]
+print(even_list)
+print(odd_list)

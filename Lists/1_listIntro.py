@@ -1,3 +1,20 @@
+"""
+List:
+Array based
+Dynamic size
+Allows items of different types
+
+
+Advantages:
+        Random Access
+        cache friendly
+
+Disadvantages:
+        Insertion, Deletion are slow
+        Search is also slow for unsorted
+
+"""
+
 lst = [10,20,30,40,50]
 
 print(lst)
@@ -17,6 +34,7 @@ print(15 in lst)
 print(lst.count(30))
 
 print(lst.index(30))
+
 
 print(lst.index(30,4,7))  # index(value, Starting Position, Ending Position(it is exclusive))
 

@@ -11,7 +11,37 @@ def rev(mylist):
         return mylist
 
 
-if __name__ == '__main__':
+# if __name__ == '__main__':
+#     l = [10, 20, 3, 4, 10, 20, 7, 3]
+#     print(rev(l))
+#
+#     l = [10]
+#     print(rev(l))
+#
+#     l = [10, 30, 30, 10, 30, 30, 20]
+#     print(rev(l))
+#
+#     l = [10, 20, 30, 40, 50]
+#     print(rev(l))
+#
+#     nl = []
+#     nl[:0] = "MANGESH"
+#     print(rev(nl))
+
+###################################################################
+def reverse_list(l):
+    if len(l) <= 1:
+        return l
+    else:
+        start = 0
+        end = len(l) - 1
+        while start < end:
+            l[start], l[end] = l[end], l[start]
+            start += 1
+            end -+ 1
+        return l
+
+if __name__ == "__main__":
     l = [10, 20, 3, 4, 10, 20, 7, 3]
     print(rev(l))
 

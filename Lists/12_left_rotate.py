@@ -24,6 +24,7 @@ def leftrotate_method4(mylist):
     return mylist
 
 
+
 if __name__ == '__main__':
     l = [10, 20, 3, 4, 10, 20, 7, 3]
     print(leftrotate_method1(l))

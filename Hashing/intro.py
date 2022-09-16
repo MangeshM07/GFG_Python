@@ -3,7 +3,7 @@ Hashing is mainly used to implement dictionaries where you have key-value pairs.
 It is also used to implement sets, where you have only keys.
 Biggest advantage of hashing is , it provides search, insert and delete all 3 operations in O(1) on an average.
 
-For array ,you have O(n) for search, O(n) for insert, O(n) time for delete if your data is stored in sorted way.
+For array ,you have O(log n) for search, O(n) for insert, O(n) time for delete if your data is stored in sorted way.
 for un-sorted array, delete and insert becomes O(1) and search becomes O(n).
 
 For Binary search trees specially AVL tree and Red-Black Tree,
@@ -21,13 +21,25 @@ Not useful for : --> Finding closest value, -- Best AVL or RedBlack tree
 Applications of hashing:
 =======================
 1. Dictionaries
-2. Database Indexing
+2. Database Indexing - Hashing or B or B+ trees are used
 3. Cryptography
 4. Caches
 5. Symbol tables in compilers/interpreters
 6. Routers
 7. Getting data from databases
 and many more
+
+Direct Address table:
+====================
+Imagine a situation where you have 100 keys with values from 0 to 999
+how would you implement following in O(1) time
+
+search
+insert 
+delete
+
+By defining an array of the same size as keys and making 1 as value for values present for their respective indexes.
+    
 
 How hash function works?
 =======================

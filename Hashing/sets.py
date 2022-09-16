@@ -52,7 +52,7 @@ del s  # deletes set itself
 s = {10, 20, 30, 40}
 print(len(s))
 
-print(20 in s)  # IN operator is fater in sets as compared to lists bcoz it uses hashing internally
+print(20 in s)  # IN operator is faster in sets as compared to lists bcoz it uses hashing internally
 print(50 in s)
 
 # Operations on two sets

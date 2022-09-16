@@ -1,6 +1,6 @@
 # Subarray with 0 sum with python
 
-# Simple solution
+# Simple solution O(n^2)
 def isZero(l):
     n = len(mylist)
     for i in range(0, n):
@@ -10,10 +10,10 @@ def isZero(l):
     return False
 
 
-# Efficient solution
+# Efficient solution O(n)
 def isZeroSum(l):
     pre_sum = 0
-    h = set(l)
+    h = set()
     for i in range(len(l)):
         pre_sum += l[i]
         if pre_sum == 0 or pre_sum in h:

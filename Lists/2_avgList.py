@@ -12,5 +12,5 @@ def avgList(lst):
     return sum/count
 
 
-lst = [10, 20, 30, 40]
+lst = [10, 20, 30, 40, 50]
 print(avgList(lst))

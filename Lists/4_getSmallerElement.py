@@ -10,3 +10,11 @@ def getSmallerElement(mylist, x):
 l = [8, 100, 20, 40, 3, 7]
 x = 10
 print(getSmallerElement(l, x))
+
+
+l = [100, 20, 40, 60, 80, 90]
+x = 60
+print(getSmallerElement(l, x))
+
+
+

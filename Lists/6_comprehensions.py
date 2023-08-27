@@ -45,7 +45,7 @@ l12 = [1,3,4,2,5]
 d1 = {x:x**3 for x in l12}
 print(d1)
 
-d2 = {x:f"ID{x}" for x in range(5)}
+d2 = { x:f"ID{x}" for x in range(5) }
 print(d2)
 
 l13 = [101,102,103]

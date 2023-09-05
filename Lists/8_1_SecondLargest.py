@@ -1,6 +1,6 @@
 def secondLargest(arr):
     if len(arr) < 2:
-        return "Number of elements in the list should be atleast 2"
+        return "Number of elements in the list should be at least 2"
 
     largest = second_largest = float('-inf')
     for num in arr:

@@ -102,3 +102,99 @@ List2 = ['For', 'Geeks']
 List.append(List2)
 print("\nList after Addition of a List: ")
 print(List)
+
+# Complexities for Adding elements in a Lists(append() method):
+# Time Complexity: O(1)
+# Space Complexity: O(1)
+
+# Method 2: Using insert() method
+# Python program to demonstrate
+# Addition of elements in a List
+
+# Creating a List
+List = [1, 2, 3, 4]
+print("Initial List: ")
+print(List)
+
+# Addition of Element at
+# specific Position
+# (using Insert Method)
+List.insert(3, 12)
+List.insert(0, 'Geeks')
+print("\nList after performing Insert Operation: ")
+print(List)
+
+# Complexities for Adding elements in a Lists(insert() method):
+# Time Complexity: O(n)
+# Space Complexity: O(1)
+
+# Method 3: Using extend() method
+"""
+Other than append() and insert() methods, there's one more method for the Addition of elements,
+ extend(),  this method is used to add multiple elements at the same time at the end of the list."""
+List = [1, 2, 3, 4]
+print("Initial List: ")
+print(List)
+
+# Addition of multiple elements to the List at the end (using Extend Method)
+List.extend([8, 'Geeks', 'Always'])
+print("\nList after performing Extend Operation: ")
+print(List)
+
+# Complexities for Adding elements in a Lists(extend() method):
+# Time Complexity: O(n)
+# Space Complexity: O(1)
+
+# Reversing a list
+# A list can be reversed by using the reverse() method in Python.
+
+List.reverse()
+print(List)
+
+
+# Removing Elements from the List
+
+# Method 1: Using remove() method
+
+List.remove(3)
+List.remove('Always')
+print("\nList after Removal of two elements: ")
+print(List)
+
+# Creating a List
+List = [1, 2, 3, 4, 5, 6,
+        7, 8, 9, 10, 11, 12]
+# Removing elements from List
+# using iterator method
+for i in range(1, 5):
+    List.remove(i)
+print("\nList after Removing a range of elements: ")
+print(List)
+
+# Complexities for Deleting elements in a Lists(remove() method):
+# Time Complexity: O(n)
+# Space Complexity: O(1)
+
+
+# Method 2: Using pop() method
+
+List = [1, 2, 3, 4, 5]
+
+# Removing element from the
+# Set using the pop() method
+List.pop()
+print("\nList after popping an element: ")
+print(List)
+
+# Removing element at a
+# specific location from the
+# Set using the pop() method
+List.pop(2)
+print("\nList after popping a specific element: ")
+print(List)
+
+"""
+Complexities for Deleting elements in a Lists(pop() method):
+    Time Complexity: O(1) / O(n)(O(1) for removing the last element, O(n) for removing the first and middle elements)
+    Space Complexity: O(1)
+"""

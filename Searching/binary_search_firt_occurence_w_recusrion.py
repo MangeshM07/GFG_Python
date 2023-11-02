@@ -1,18 +1,23 @@
-def searchInSortedListRecursively(n, array, left, right):
-    if left <= right:
-        mid = (left + right)//2
+def searchInSortedListRecursively(array, n, low, high):
+    if low > high:
+        return -1
 
-        if array[mid] == n:
-            return 1
-        elif array[mid] < n:
-            searchInSortedListRecursively(n, array, left, mid-1)
-        elif array[mid] > n:
-            searchInSortedListRecursively(n, array, mid+1, right)
+    mid = (low + high)//2
+    if array[mid] == n:
+        return 1
+    elif array[mid] > n:
+        return searchInSortedListRecursively(array, n, low, mid - 1)
+    elif array[mid] < n:
+        return searchInSortedListRecursively(array, n, mid + 1, high)
 
     return -1
 
-arr = [10,20,30,40,50,60,70]
+
+def bSearchMain(arr, n):
+    return searchInSortedListRecursively(arr, n, 0, len(arr) - 1)
+
+
+
+arr = [10, 20, 30, 40, 50, 60, 70]
 n = 60
-left = 0
-right = len(arr)-1
-print(searchInSortedListRecursively(n,arr, left , right))
+print(bSearchMain(arr, n))

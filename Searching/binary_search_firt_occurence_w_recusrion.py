@@ -1,5 +1,5 @@
 def searchInSortedListRecursively(array, n, low, high):
-    if low > high:
+    if low > high :
         return -1
 
     mid = (low + high)//2

@@ -12,10 +12,11 @@ def indexOflastOccurence(arr, element):
         elif arr[mid] < element:
             low = mid + 1
         elif arr[mid] > element:
-            high = mid -1
+            high = mid - 1
 
 
     return result
+
 
 arr = [1, 10, 10, 10, 20, 20, 40]
 print(indexOflastOccurence(arr, 20))

@@ -40,11 +40,12 @@ def bSearch_count(input_list, search_item):
     if first == -1:
         return 0
     else:
-        return bSearch_last_occurrence(input_list, search_item) - first +1
+        return bSearch_last_occurrence(input_list, search_item) - first + 1
 
 
 b = [5,10,10,20,20,20]
 
-print(5, bSearch_count(b, 5))
-print(10, bSearch_count(b, 10))
+# print(bSearch_first_occurrence(b,10))
+# print(5, bSearch_count(b, 5))
+# print(10, bSearch_count(b, 10))
 print(20, bSearch_count(b, 20))

@@ -18,4 +18,4 @@ def indexOfFirstOccurence(arr, element):
     return result
 
 arr = [1, 10, 10, 10, 20, 20, 40]
-print(indexOfFirstOccurence(arr, 10))
+print(indexOfFirstOccurence(arr, 20))

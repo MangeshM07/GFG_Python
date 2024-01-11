@@ -1,0 +1,14 @@
+Sorting in Python:
+==================
+
+> sort()
+    > Works only for list
+    > sorts in place
+
+> sorted()
+    > works for any iterables
+    > Does not modifies the passed container. Returns a new list of sorted items
+
+> Both use Tim sort and both are stable
+ Tim sort is a hybrid algorithm that use the combination of merge sort and insertion sort internally.
+ Worst case time complexity is O(n log n)

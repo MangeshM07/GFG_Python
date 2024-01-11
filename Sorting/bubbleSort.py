@@ -14,7 +14,7 @@ def bubbleSort(l):
 
     return l
 
-arr = [10,3,7,15]
+arr = [10,3,7,15, 2]
 arr1 = [5,10,15,20]
 
-print(bubbleSort(arr1))
+print(bubbleSort(arr))

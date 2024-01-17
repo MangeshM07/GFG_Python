@@ -3,7 +3,7 @@
 #
 #
 # --> Works for any iterables(List, Tuple, Dictionary, String, Set, etc)
-# --> Returns a list with sorted items
+# --> Returns a n ew list with sorted items
 # --> parameters like reverse and key work same way as sort()
 #
 # */

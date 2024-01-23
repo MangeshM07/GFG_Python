@@ -1,3 +1,7 @@
+# O(n^2) time | O(1) space
+# In-place and stable
+# Used in python for small arrays (TimSort and IntroSort)
+# O(n) time in best case
 def insertionSort(array):
     for i in range(1, len(array)):
         x = array[i]

@@ -29,7 +29,7 @@ def merge(a, low, mid, high):
 
 a = [10,15,20,40,8,11,55]
 low = 0
-high = 3
+mid = 3
 high = 6
 
 print(merge(a, 0, 3, 6))

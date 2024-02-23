@@ -18,9 +18,9 @@ def hoaresPartition(arr, l , h):
         arr[i], arr[j] = arr[j], arr[i]
 
 
-arr = [5,3,8,4,2,7,1,10]
+arr = [5,3,8,4,2,7,1,10, 12]
 l = 0
-h = 7
+h = 8
 
 hoaresPartition(arr, l ,h)
 
